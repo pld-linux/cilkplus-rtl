@@ -1,0 +1,10 @@
+--- cilkplus-rtl-src-004516/Makefile.am.orig	2018-01-19 23:48:40.000000000 +0100
++++ cilkplus-rtl-src-004516/Makefile.am	2020-11-15 20:06:14.378903907 +0100
+@@ -119,6 +119,7 @@
+ libcilkrts_la_LDFLAGS = -version-info 5:0:0
+ libcilkrts_la_LDFLAGS += @lt_cv_dlopen_libs@
+ libcilkrts_la_LDFLAGS += $(AM_LDFLAGS)
++libcilkrts_la_LIBADD = -ldl
+ 
+ # If we're building on Linux, use the Linux version script
+ if LINUX_LINKER_SCRIPT
