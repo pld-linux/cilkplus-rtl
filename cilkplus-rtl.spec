@@ -104,7 +104,7 @@ języków C/C++.
 
 %prep
 %setup -q -n %{name}-src-00%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__libtoolize}
